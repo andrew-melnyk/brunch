@@ -17,6 +17,7 @@ program
   .command('build')
   .description('Build a brunch project. Short-cut: b')
   .option('-c, --config [path]', 'path to config files')
+  .option('-b, --publicPath [path]', 'public path')
   .option('-o, --optimize', 'optimize result files (minify etc.)')
   .action(commands.build)
 
@@ -24,6 +25,7 @@ program
   .command('watch')
   .description('Watch brunch directory and rebuild if something changed. Short-cut: w')
   .option('-c, --config [path]', 'path to config files')
+  .option('-b, --publicPath [path]', 'public path')
   .option('-o, --optimize', 'optimize result files (minify etc.)')
   .option('-s, --server', 'run a simple http server that would serve public dir')
   .option('-p, --port [port]', 'if a `server` option was specified, define on which port
